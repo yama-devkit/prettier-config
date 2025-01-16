@@ -1,0 +1,30 @@
+{
+    "name": "@yama-devkit/prettier-config",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "A simple & effective Prettier shared configuration",
+    "main": "./dist/index.js",
+    "files": [
+        "./dist"
+    ],
+    "scripts": {
+        "build": "npx rollup -c",
+        "lint": "npx prettier --check .",
+        "format": "npx prettier --write ."
+    },
+    "prettier": "./dist/index.js",
+    "devDependencies": {
+        "@rollup/plugin-typescript": "^12.1.4",
+        "rollup": "^4.48.0",
+        "tslib": "^2.8.1"
+    },
+    "peerDependencies": {
+        "prettier": "^3.4.2",
+        "typescript": "^5.7.3"
+    },
+    "dependencies": {
+        "prettier-plugin-css-order": "^2.1.2",
+        "prettier-plugin-organize-attributes": "^1.0.0",
+        "prettier-plugin-organize-imports": "^4.2.0"
+    }
+}
