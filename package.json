@@ -3,6 +3,14 @@
     "version": "1.0.0",
     "type": "module",
     "description": "A simple & effective Prettier shared configuration",
+    "license": "MIT",
+    "repository": {
+        "url": "https://github.com/yama-devkit/prettier-config"
+    },
+    "publishConfig": {
+        "access": "public",
+        "provenance": true
+    },
     "main": "./dist/index.js",
     "files": [
         "./dist"
@@ -15,7 +23,7 @@
     "prettier": "./dist/index.js",
     "devDependencies": {
         "@rollup/plugin-typescript": "^12.1.4",
-        "rollup": "^4.48.0",
+        "rollup": "^4.48.1",
         "tslib": "^2.8.1"
     },
     "peerDependencies": {
